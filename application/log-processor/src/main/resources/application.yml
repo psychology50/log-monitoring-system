@@ -6,10 +6,17 @@ spring:
     name: log-processor
   kafka:
     bootstrap-servers: localhost:9092
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: log-processors
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+opensearch:
+  host: localhost
+  port: 9200
 
 logging:
   level:
     com.logmonitoring: DEBUG
+    org.apache.kafka: INFO
