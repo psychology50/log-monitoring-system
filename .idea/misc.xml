@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/application/web-app/pom.xml" />
+        <option value="$PROJECT_DIR$/application/log-processor/pom.xml" />
       </list>
     </option>
   </component>
