@@ -103,7 +103,7 @@ public class LogAnalyticsService {
             sourceBuilder.aggregation(
                     AggregationBuilders.dateHistogram("timeline")
                             .field("timestamp")
-                            .calendarInterval(DateHistogramInterval.minutes(10))
+                            .calendarInterval(DateHistogramInterval.MINUTE)
                             .minDocCount(0)
             );
 

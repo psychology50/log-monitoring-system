@@ -11,7 +11,7 @@
 
 <script>
 import {onMounted, ref, watch} from 'vue'
-import {ArcElement, Chart as ChartJS, Legend, Title, Tooltip} from 'chart.js'
+import {ArcElement, Chart as ChartJS, Legend, Title, Tooltip} from "chart.js/auto"
 
 ChartJS.register(ArcElement, Tooltip, Legend, Title)
 
